@@ -8,7 +8,6 @@ const port = process.env.PORT;
 app.get('/',(req,res)=>{
     const clientIp = requestIp.getClientIp(req);
     res.send(`YOUR IP Adress is ${clientIp}.`);
-    // res.end(`YOUR IP Adress is ${clientIp}.`);
 });
 
 app.listen(port, () =>{
@@ -18,7 +17,6 @@ app.listen(port, () =>{
     console.log(`Database UserName ${process.env.DB_USERNAME}`);
     console.log(`Database Password ${process.env.DB_PASSWORD}`);
     console.log(`Database Name ${process.env.DB_NAME}`);
- 
 });
 
 
